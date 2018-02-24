@@ -1,0 +1,47 @@
+
+#wb_header { background: transparent none repeat scroll left top; height: 80px; }
+#wb_main { background: transparent none repeat scroll left top; height: 820px; padding-bottom: 60px; }
+#wb_footer { background: #8a8a8a url("gallery/vintage_footer.jpg") repeat scroll left top; height: 77px; }
+body { background: transparent url("../gallery_gen/d965dffa31084817a675f6241fb834f5.jpg") repeat-x scroll center top; }
+.wb_sbg { background: transparent url("../gallery_gen/031a511a53ecafd97295833f36c013fe.png") no-repeat scroll center top; }
+body, .wb_sbg { min-width: 1200px; min-height: 977px; }
+.root { width: 1200px; height: 977px; overflow: visible; min-height: 977px; }
+#wb_element_instance32 { left: 324px; top: 20px; min-width: 850px; width: 850px; min-height: 40px; height: 40px; display: block; z-index: 278; }
+#wb_element_instance32 ul { background: #ffffff none repeat scroll left top; border: 1px none #000000; }
+#wb_element_instance32, #wb_element_instance32 ul { text-align: right; }
+#wb_element_instance32 ul ul { background: #ffffff none repeat scroll left top; }
+#wb_element_instance32 li { margin: 0px 10px 0px 10px; }
+#wb_element_instance32 li a { text-transform: uppercase; border: 0px none #000000; padding: 13px 20px 14px 20px; font: normal bold 13px Trebuchet MS,sans-serif; text-decoration: none; color: #000000; line-height: 15px; background: transparent none repeat scroll left top; }
+#wb_element_instance32 li.over > a, #wb_element_instance32 li:focus > a { border: 0px none #000000; font: normal bold 13px Trebuchet MS,sans-serif; text-decoration: none; color: #ffffff; line-height: 15px; background: #000000 none no-repeat scroll center bottom; }
+#wb_element_instance32 li.active > a { border: 0px none #000000; font: normal bold 13px Trebuchet MS,sans-serif; text-decoration: none; color: #ffffff; line-height: 15px; background: #000000 none no-repeat scroll center bottom; }
+#wb_element_instance32:not(.collapse-expanded) .vmenu ul.open-left,#wb_element_instance32:not(.collapse-expanded) .hmenu ul.open-left { left: auto; right: 100%; }
+#wb_element_instance32:not(.collapse-expanded) .hmenu > li > ul.open-left { left: auto; right: 0; }
+#wb_element_instance33 { left: 20px; top: 10px; min-width: 75px; width: 75px; min-height: 58px; height: 58px; display: block; z-index: 221; }
+#wb_element_instance33 img { width: 75px; height: 58px; display: block; position: static; left: 0px; top: 0px; }
+#wb_element_instance34 { left: 100px; top: 10px; min-width: 270px; width: 270px; min-height: 56px; height: 56px; display: block; z-index: 279; }
+#wb_element_instance35 { left: 20px; top: 30px; min-width: 230px; width: 230px; min-height: 24px; height: 24px; display: block; z-index: 295; }
+#wb_element_instance36 { left: 580px; top: 90px; min-width: 560px; width: 560px; min-height: 302px; height: 302px; display: block; z-index: 94; }
+#wb_element_instance37 { left: 20px; top: 30px; min-width: 1160px; width: 1160px; min-height: 29px; height: 29px; display: block; z-index: 96; }
+#wb_element_instance38 { left: 30px; top: 610px; min-width: 550px; width: 550px; min-height: 24px; height: 24px; display: block; z-index: 97; }
+#wb_element_instance39 { left: 580px; top: 440px; min-width: 470px; width: 470px; min-height: 320px; height: 320px; display: block; z-index: 98; }
+#wb_element_instance39 iframe { width: 470px; height: 320px; }
+#wb_element_instance40 { left: 580px; top: 410px; min-width: 440px; width: 440px; min-height: 24px; height: 24px; display: block; z-index: 99; }
+#wb_element_instance41 { left: 20px; top: 100px; min-width: 520px; width: 520px; min-height: 318px; height: 318px; display: block; z-index: 100; }
+#wb_element_instance42 { left: 0px; top: 825px; display: block; z-index: 9000; }
+#wb_element_instance43 { left: 0px; top: 75px; display: block; z-index: 9999; }
+
+
+#wb_element_instance34 p:last-child { margin-bottom: 0; }
+#wb_element_instance35 p:last-child { margin-bottom: 0; }
+#wb_element_instance36 p:last-child { margin-bottom: 0; }
+#wb_element_instance37 p:last-child { margin-bottom: 0; }
+#wb_element_instance38 p:last-child { margin-bottom: 0; }
+#wb_element_instance40 p:last-child { margin-bottom: 0; }
+#wb_element_instance41 p:last-child { margin-bottom: 0; }
+
+
+@media (min-width: 768px) {
+}
+
+@media (min-width: 992px) {
+}

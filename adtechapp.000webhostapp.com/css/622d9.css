@@ -1,0 +1,49 @@
+
+#wb_header { background: transparent none repeat scroll left top; height: 80px; }
+#wb_main { background: transparent none repeat scroll left top; height: 1558px; padding-bottom: 60px; }
+#wb_footer { background: #8a8a8a url("gallery/vintage_footer.jpg") repeat scroll left top; height: 77px; }
+body { background: transparent url("../gallery_gen/d965dffa31084817a675f6241fb834f5.jpg") repeat-x scroll center top; }
+.wb_sbg { background: transparent url("../gallery_gen/031a511a53ecafd97295833f36c013fe.png") no-repeat scroll center top; }
+body, .wb_sbg { min-width: 1200px; min-height: 1715px; }
+.root { width: 1200px; height: 1715px; overflow: visible; min-height: 1715px; }
+#wb_element_instance57 { left: 324px; top: 20px; min-width: 850px; width: 850px; min-height: 40px; height: 40px; display: block; z-index: 278; }
+#wb_element_instance57 ul { background: #ffffff none repeat scroll left top; border: 1px none #000000; }
+#wb_element_instance57, #wb_element_instance57 ul { text-align: right; }
+#wb_element_instance57 ul ul { background: #ffffff none repeat scroll left top; }
+#wb_element_instance57 li { margin: 0px 10px 0px 10px; }
+#wb_element_instance57 li a { text-transform: uppercase; border: 0px none #000000; padding: 13px 20px 14px 20px; font: normal bold 13px Trebuchet MS,sans-serif; text-decoration: none; color: #000000; line-height: 15px; background: transparent none repeat scroll left top; }
+#wb_element_instance57 li.over > a, #wb_element_instance57 li:focus > a { border: 0px none #000000; font: normal bold 13px Trebuchet MS,sans-serif; text-decoration: none; color: #ffffff; line-height: 15px; background: #000000 none no-repeat scroll center bottom; }
+#wb_element_instance57 li.active > a { border: 0px none #000000; font: normal bold 13px Trebuchet MS,sans-serif; text-decoration: none; color: #ffffff; line-height: 15px; background: #000000 none no-repeat scroll center bottom; }
+#wb_element_instance57:not(.collapse-expanded) .vmenu ul.open-left,#wb_element_instance57:not(.collapse-expanded) .hmenu ul.open-left { left: auto; right: 100%; }
+#wb_element_instance57:not(.collapse-expanded) .hmenu > li > ul.open-left { left: auto; right: 0; }
+#wb_element_instance58 { left: 20px; top: 10px; min-width: 75px; width: 75px; min-height: 58px; height: 58px; display: block; z-index: 221; }
+#wb_element_instance58 img { width: 75px; height: 58px; display: block; position: static; left: 0px; top: 0px; }
+#wb_element_instance59 { left: 100px; top: 10px; min-width: 270px; width: 270px; min-height: 56px; height: 56px; display: block; z-index: 279; }
+#wb_element_instance60 { left: 20px; top: 30px; min-width: 230px; width: 230px; min-height: 24px; height: 24px; display: block; z-index: 295; }
+#wb_element_instance61 { left: 10px; top: 440px; min-width: 540px; width: 540px; min-height: 1058px; height: 1058px; display: block; z-index: 109; }
+#wb_element_instance62 { left: 20px; top: 30px; min-width: 1160px; width: 1160px; min-height: 29px; height: 29px; display: block; z-index: 96; }
+#wb_element_instance63 { left: 570px; top: 440px; min-width: 560px; width: 560px; min-height: 206px; height: 206px; display: block; z-index: 98; }
+#wb_element_instance64 { left: 570px; top: 630px; min-width: 560px; width: 560px; min-height: 270px; height: 270px; display: block; z-index: 100; }
+#wb_element_instance64 img { width: 560px; height: 270px; display: block; position: static; left: 0px; top: 0px; }
+#wb_element_instance65 { left: 210px; top: 70px; min-width: 790px; width: 790px; min-height: 350px; height: 350px; display: block; z-index: 102; }
+#wb_element_instance65 img { width: 790px; height: 350px; display: block; position: static; left: 0px; top: 0px; }
+#wb_element_instance66 { left: 230px; top: 400px; min-width: 200px; width: 200px; min-height: 24px; height: 24px; display: block; z-index: 103; }
+#wb_element_instance67 { left: 570px; top: 900px; min-width: 200px; width: 200px; min-height: 24px; height: 24px; display: block; z-index: 104; }
+#wb_element_instance68 { left: 0px; top: 1050px; display: block; z-index: 9000; }
+#wb_element_instance69 { left: 0px; top: 75px; display: block; z-index: 9999; }
+
+
+#wb_element_instance59 p:last-child { margin-bottom: 0; }
+#wb_element_instance60 p:last-child { margin-bottom: 0; }
+#wb_element_instance61 p:last-child { margin-bottom: 0; }
+#wb_element_instance62 p:last-child { margin-bottom: 0; }
+#wb_element_instance63 p:last-child { margin-bottom: 0; }
+#wb_element_instance66 p:last-child { margin-bottom: 0; }
+#wb_element_instance67 p:last-child { margin-bottom: 0; }
+
+
+@media (min-width: 768px) {
+}
+
+@media (min-width: 992px) {
+}

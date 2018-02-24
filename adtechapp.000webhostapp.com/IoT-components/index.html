@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<!-- Mirrored from adtechapp.000webhostapp.com/IoT-components/ by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 22 May 2017 20:34:43 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=utf-8" /><!-- /Added by HTTrack -->
+<head>
+	<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+	<title>IoT components</title>
+	<base  />
+			<meta name="viewport" content="width=992" />
+		<meta name="description" content="" />
+	<meta name="keywords" content="" />
+		
+	<link href="../css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+	<script src="../js/jquery-1.11.3.min.js" type="text/javascript"></script>
+	<script src="../js/bootstrap.min.js" type="text/javascript"></script>
+	<script src="../js/main7016.js?v=1.0.8" type="text/javascript"></script>
+
+	<link href="../css/site9f66.css?v=1.1.49" rel="stylesheet" type="text/css" />
+	<link href="../css/common22d9.css?ts=1495483675" rel="stylesheet" type="text/css" />
+	<link href="../css/622d9.css?ts=1495483675" rel="stylesheet" type="text/css" />
+	
+	<script type="text/javascript">var currLang = '';</script>		
+	<!-- Le HTML5 shim, for IE6-8 support of HTML5 elements -->
+	<!--[if lt IE 9]>
+	  <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+	<![endif]-->
+</head>
+
+
+<body><div class="root"><div class="vbox wb_container" id="wb_header">
+	
+<div id="wb_element_instance57" class="wb_element wb-menu"><ul class="hmenu"><li><a href="../Home/index.html" target="_self" title="Home">Home</a></li><li><a href="../Introduction/index.html" target="_self" title="Introduction">Introduction</a></li><li><a href="../how-it-works/index.html" target="_self" title="how it works">how it works</a></li><li class="active"><a href="index.html" target="_self" title="IoT components">IoT components</a></li><li><a href="../Accessing-IoT/index.html" target="_self" title="Accessing IoT">Accessing IoT</a></li><li><a href="../Reference/index.html" target="_self" title="Reference">Reference</a></li></ul><div class="clearfix"></div></div><div id="wb_element_instance58" class="wb_element wb_element_picture"><a href="../Home/index.html"><img alt="gallery/download" src="../gallery_gen/7534d748d8bd833acbb26e33fd77e051_75x58.jpg"></a></div><div id="wb_element_instance59" class="wb_element" style=" line-height: normal;"><h4 class="wb-stl-pagetitle">Amazon IoT</h4>
+
+<h5 class="wb-stl-subtitle"><font color="#ffffff">Applications</font></h5>
+</div></div>
+<div class="vbox wb_container" id="wb_main">
+	
+<div id="wb_element_instance61" class="wb_element" style=" line-height: normal;"><p>Following are the AWS IoT components, which are used to connect and transfer data to and from the devices and IoT applications.</p>
+
+<p><strong>Device gateway </strong></p>
+
+<p>Allows secure and effectual communication through account level isolation and authorization and data transfer data to and from the devices, IoT entities such as AWS IoT Rules Engine, Device Shadows, AWS IoT applications, other AWS services and other 3rd-party services as well. It scales automatically according to usage with no operational overhead for developers and users. It supports publish and subscribe messaging pattern over secure MQTT and WebSockets and HTTPS for publishing.</p>
+
+<p> </p>
+
+<p><strong>Message broker</strong></p>
+
+<p>Offers a secure technique for devices and AWS IoT applications to publish and subscribe messages from each other. For every AWS account and region pair there is a unique topic namespace. Sending and receiving messages across AWS accounts and regions is not possible. For each session, it holds list of all client sessions and the associated subscriptions. When a message is published on a topic, it checks for sessions with subscriptions that map to the topic. Then it forwards the publish message to all sessions which are connected to client currently.</p>
+
+<p> </p>
+
+<p><strong>Rules engine</strong></p>
+
+<p>This component is responsible for message processing and integration with other AWS services. Data from message payloads is selected using an SQL-based language, then they are processed and then sent to other services, such as Amazon S3, Amazon DynamoDB, and AWS Lambda. Message Broker can be used if there is a need to republish these messages to other subscribers.</p>
+
+<p>Following are the sample use cases for Rules:</p>
+
+<p>• Filtering and transforming incoming messages and storing them as time series data in DynamoDB.</p>
+
+<p>• Sending a push notification via SNS when the data from a sensor crosses a certain threshold.</p>
+
+<p><strong>Example for a rule:</strong></p>
+
+<p>{</p>
+
+<p>"sql": "SELECT * from 'iot/tempSensors/#' WHERE temp &gt; 50",</p>
+
+<p>"description": "Rule to save sensor data when temperature is about 50",</p>
+
+<p>"actions": [</p>
+
+<p>{</p>
+
+<p>"dynamoDB": {</p>
+
+<p>"tableName": "HighTempTable",</p>
+
+<p>"roleArn": "arn:aws:iam::your-aws-account-id:role/dynamoPut",</p>
+
+<p>"hashKeyField": "key",</p>
+
+<p>"hashKeyValue": "${topic(3)}",</p>
+
+<p>"rangeKeyField": "timestamp",</p>
+
+<p>"rangeKeyValue": "${timestamp()}"</p>
+
+<p>}</p>
+
+<p>      }</p>
+
+<p>  ]</p>
+
+<p>}</p>
+
+<p> </p>
+</div><div id="wb_element_instance62" class="wb_element" style=" line-height: normal;"><h1 class="wb-stl-heading1">IoT Components</h1>
+</div><div id="wb_element_instance63" class="wb_element" style=" line-height: normal;"><p><span style="background-color: transparent;"><strong>Security and Identity service - </strong>Provides shared responsibility for security in the AWS cloud. </span></p>
+
+<p style="text-align: justify;"><span style="background-color: transparent;"><strong>Device/Thing registry – </strong>Helps to organize and track the resources associated with each thing/device. Enables us to register the things/devices and associate its attributes. Thing type allows to fine common features for devices that are of similar type.</span></p>
+
+<p style="text-align: justify;"><span style="background-color: transparent;"><strong>Device/Thing shadow –</strong> Contains properties of a connected device and responsible for cloud and mobile applications to communicate with the registered devices. Stores and retrieve current state and information for a thing in JSON format.</span></p>
+
+<p style="text-align: justify;"><span style="background-color: transparent;"><strong>Device/Thing Shadows service - </strong>Allows to specify persistent representations devices in AWS cloud. When updated state information is published to thing shadow, once connected thing can synchronize its state.</span></p>
+</div><div id="wb_element_instance64" class="wb_element wb_element_picture"><img alt="gallery/icex_3connected" src="../gallery_gen/8a42a3b72953b8dc09ebcdde5f806291_560x270.png"></div><div id="wb_element_instance65" class="wb_element wb_element_picture"><img alt="gallery/aws_iot_data_services" src="../gallery_gen/db989ab117c62ffb574596aa9d0f9a8e_790x350.png"></div><div id="wb_element_instance66" class="wb_element" style=" line-height: normal;"><p class="wb-stl-normal">Ref: http://docs.aws.amazon.com/iot/latest/developerguide/images/aws_iot_data_services.png</p>
+</div><div id="wb_element_instance67" class="wb_element" style=" line-height: normal;"><h5 class="wb-stl-subtitle">Ref: https://d0.awsstatic.com/Test%20Images/MasonTests/IceX_3Connected.png</h5>
+</div><div id="wb_element_instance68" class="wb_element" style="width: 100%;">
+						<script type="text/javascript">
+				$(function() {
+					$("#wb_element_instance68").hide();
+				});
+			</script>
+						</div></div>
+<div class="vbox wb_container" id="wb_footer" style="height: 135px;">
+	
+<div id="wb_element_instance60" class="wb_element" style=" line-height: normal;"><p class="wb-stl-footer">© 2017 <a href="http://bestxyzonline.xyz/">bestxyzonline.xyz</a></p></div><div id="wb_element_instance69" class="wb_element" style="text-align: center; width: 100%;"><div class="wb_footer"></div><script type="text/javascript">
+			$(function() {
+				var footer = $(".wb_footer");
+				var html = (footer.html() + "").replace(/^\s+|\s+$/g, "");
+				if (!html) {
+					footer.parent().remove();
+					footer = $("#wb_footer");
+					footer.height(80);
+				}
+			});
+			</script></div></div><div class="wb_sbg"></div></div><div style='text-align: right;position: fixed;z-index:9999999;bottom: 0; width: 100%;cursor: pointer;line-height: 0;'><a title="Hosted on free web hosting 000webhost.com. Host your own website for FREE." target="_blank" href="https://www.000webhost.com/?utm_source=000webhostapp&amp;utm_campaign=000_logo&amp;utm_medium=website_adtechapp&amp;utm_content=footer_img"><img src="../../cloud.githubusercontent.com/assets/23024110/20663010/9968df22-b55e-11e6-941d-edbc894c2b78.png"  alt="www.000webhost.com"></a></div></body>
+
+<!-- Mirrored from adtechapp.000webhostapp.com/IoT-components/ by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 22 May 2017 20:34:43 GMT -->
+</html>
